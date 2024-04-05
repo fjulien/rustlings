@@ -1,9 +1,9 @@
 // intro2.rs
 //
-// Make the code print a greeting to the world.
+// Faire en sorte que le code imprime un message de bienvenue au monde.
 //
-// Execute `rustlings hint intro2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint intro2` ou utilisez la sous-commande de veille `hint` pour un
+// pour un indice.
 
 fn main() {
     println!("Hello there!")

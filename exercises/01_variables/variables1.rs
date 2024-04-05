@@ -1,13 +1,11 @@
 // variables1.rs
 //
-// Make me compile!
+// Faites-moi compiler !
 //
-// Execute `rustlings hint variables1` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint variables1` ou utilisez la sous-commande `hint` watch pour un
+// pour un indice.
 
 fn main() {
-    x = 5;
+    let x = 5;
     println!("x has the value {}", x);
 }
