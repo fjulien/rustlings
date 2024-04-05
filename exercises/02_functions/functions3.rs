@@ -1,12 +1,10 @@
 // functions3.rs
 //
-// Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
-// hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint functions3` ou utilisez la sous-commande `hint` watch pour un
+// pour un indice.
 
 fn main() {
-    call_me();
+    call_me(5);
 }
 
 fn call_me(num: u32) {
