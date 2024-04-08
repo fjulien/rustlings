@@ -1,18 +1,22 @@
 // if1.rs
 //
-// Execute `rustlings hint if1` or use the `hint` watch subcommand for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint if1` ou utilisez la sous-commande de surveillance `hint` pour obtenir une indication.
 
 pub fn bigger(a: i32, b: i32) -> i32 {
-    // Complete this function to return the bigger number!
-    // If both numbers are equal, any of them can be returned.
-    // Do not use:
-    // - another function call
-    // - additional variables
+    // Complétez cette fonction pour renvoyer le plus grand nombre !
+    // Si les deux nombres sont égaux, n'importe lequel d'entre eux peut être renvoyé.
+    // Ne pas utiliser :
+    // - un autre appel de fonction
+    // - des variables supplémentaires
+
+    if a > b {
+        a
+    } else {
+        b
+    }
 }
 
-// Don't mind this for now :)
+// Ne vous en préoccupez pas pour l'instant :)
 #[cfg(test)]
 mod tests {
     use super::*;
