@@ -1,28 +1,28 @@
 // move_semantics6.rs
 //
-// You can't change anything except adding or removing references.
+// Vous ne pouvez rien changer, sauf ajouter ou supprimer des références.
 //
-// Execute `rustlings hint move_semantics6` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics6` ou utilisez la sous-commande watch `hint` pour un indice.
+// pour un indice.
 
 // I AM NOT DONE
 
 fn main() {
     let data = "Rust is great!".to_string();
 
-    get_char(data);
+    get_char(&data);
 
-    string_uppercase(&data);
+    string_uppercase(data);
 }
 
-// Should not take ownership
-fn get_char(data: String) -> char {
+// Ne doit pas s'approprier la propriété
+fn get_char(mut data: &String) -> char {
     data.chars().last().unwrap()
 }
 
-// Should take ownership
-fn string_uppercase(mut data: &String) {
-    data = &data.to_uppercase();
-
+// Doit s'approprier le projet
+fn string_uppercase(data: String) {
+    let data = data.to_uppercase();
+    
     println!("{}", data);
 }

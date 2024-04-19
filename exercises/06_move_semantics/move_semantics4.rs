@@ -1,13 +1,11 @@
 // move_semantics4.rs
 //
-// Refactor this code so that instead of passing `vec0` into the `fill_vec`
-// function, the Vector gets created in the function itself and passed back to
-// the main function.
+// Refondre ce code pour qu'au lieu de passer `vec0` dans la fonction `fill_vec`
+// le vecteur est créé dans la fonction elle-même et renvoyé à la fonction
+// la fonction principale.
 //
-// Execute `rustlings hint move_semantics4` or use the `hint` watch subcommand
-// for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint move_semantics4` ou utilisez la sous-commande `hint` watch
+// pour un indice.
 
 #[test]
 fn main() {
@@ -18,12 +16,10 @@ fn main() {
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
 
-// `fill_vec()` no longer takes `vec: Vec<i32>` as argument - don't change this!
-fn fill_vec() -> Vec<i32> {
-    // Instead, let's create and fill the Vec in here - how do you do that?
-    let mut vec = vec;
-
-    vec.push(88);
-
-    vec
+// `fill_vec()` ne prend plus `vec : Vec<i32>` comme argument - ne changez pas cela !
+fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+    // Au lieu de cela, créons et remplissons le Vec ici - comment faire ?
+    let mut responce = vec.clone();
+    responce.push(88);
+    responce
 }

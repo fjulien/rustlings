@@ -1,12 +1,10 @@
 // move_semantics3.rs
 //
-// Make me compile without adding new lines -- just changing existing lines! (no
-// lines with multiple semicolons necessary!)
+// Faites-moi compiler sans ajouter de nouvelles lignes -- juste en changeant les lignes existantes ! (non
+// lignes avec plusieurs points-virgules nécessaires !)
 //
-// Execute `rustlings hint move_semantics3` or use the `hint` watch subcommand
-// for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint move_semantics3` ou utilisez la sous-commande `hint` watch
+// pour un indice.
 
 #[test]
 fn main() {
@@ -17,7 +15,7 @@ fn main() {
     assert_eq!(vec1, vec![22, 44, 66, 88]);
 }
 
-fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
+fn fill_vec(mut vec: Vec<i32>) -> Vec<i32> {
     vec.push(88);
 
     vec
