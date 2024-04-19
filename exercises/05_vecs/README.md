@@ -1,17 +1,16 @@
 # Vectors
 
-Vectors are one of the most-used Rust data structures. In other programming
-languages, they'd simply be called Arrays, but since Rust operates on a
-bit of a lower level, an array in Rust is stored on the stack (meaning it
-can't grow or shrink, and the size needs to be known at compile time),
-and a Vector is stored in the heap (where these restrictions do not apply).
+Les vecteurs sont l'une des structures de données les plus utilisées en Rust. Dans d'autres langages de
+de programmation, on les appellerait simplement des tableaux, mais comme Rust opère à un
+un peu plus bas, un tableau en Rust est stocké sur la pile (ce qui signifie qu'il ne peut pas grandir ou rétrécir, et que sa taille doit être connue de tous).
+ne peut pas croître ou décroître, et la taille doit être connue au moment de la compilation,
+et un vecteur est stocké dans le tas (où ces restrictions ne s'appliquent pas).
+Les vecteurs font l'objet d'un chapitre ultérieur du livre, mais nous pensons qu'ils sont suffisamment utiles pour en parler un peu.
+mais nous pensons qu'ils sont suffisamment utiles pour en parler un peu plus tôt. Nous parlerons de
+l'autre structure de données utile, les cartes de hachage, plus tard.
 
-Vectors are a bit of a later chapter in the book, but we think that they're
-useful enough to talk about them a bit earlier. We shall be talking about
-the other useful data structure, hash maps, later.
+## Plus d'informations
 
-## Further information
-
-- [Storing Lists of Values with Vectors](https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
+- [Stocker des listes de valeurs avec des vecteurs](https://doc.rust-lang.org/stable/book/ch08-01-vectors.html)
 - [`iter_mut`](https://doc.rust-lang.org/std/primitive.slice.html#method.iter_mut)
 - [`map`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map)

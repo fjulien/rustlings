@@ -1,19 +1,17 @@
 // primitive_types3.rs
 //
-// Create an array with at least 100 elements in it where the ??? is.
+// Créez un tableau d'au moins 100 éléments dans lequel se trouve le ???.
 //
-// Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
-// for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint primitive_types3` ou utilisez la sous-commande `hint` watch
+// pour un indice.
 
 fn main() {
-    let a = ???
+    let a = [1; 101];
 
     if a.len() >= 100 {
-        println!("Wow, that's a big array!");
+        println!("Wow, c'est un grand nombre !");
     } else {
-        println!("Meh, I eat arrays like that for breakfast.");
-        panic!("Array not big enough, more elements needed")
+        println!("Meh, je mange des tableaux comme ça au petit déjeuner.");
+        panic!("Le tableau n'est pas assez grand, il faut plus d'éléments")
     }
 }

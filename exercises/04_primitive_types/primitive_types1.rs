@@ -1,20 +1,18 @@
 // primitive_types1.rs
 //
-// Fill in the rest of the line that has code missing! No hints, there's no
-// tricks, just get used to typing these :)
-
-// I AM NOT DONE
+// Remplissez le reste de la ligne où il manque du code ! Pas de conseils, il n'y a pas d'astuces
+// astuces, il faut juste s'habituer à les taper :)
 
 fn main() {
-    // Booleans (`bool`)
+    // Booléens (`bool`)
 
     let is_morning = true;
     if is_morning {
-        println!("Good morning!");
+        println!("Bonjour!");
     }
 
-    let // Finish the rest of this line like the example! Or make it be false!
+    let is_evening = true ; // Terminez le reste de cette ligne comme dans l'exemple ! Ou faites en sorte qu'elle soit fausse !
     if is_evening {
-        println!("Good evening!");
+        println!("Bonsoir!");
     }
 }

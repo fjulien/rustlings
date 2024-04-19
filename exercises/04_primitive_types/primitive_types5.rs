@@ -1,15 +1,13 @@
 // primitive_types5.rs
 //
-// Destructure the `cat` tuple so that the println will work.
+// Déstructure le tuple `cat` pour que le println fonctionne.
 //
-// Execute `rustlings hint primitive_types5` or use the `hint` watch subcommand
-// for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint primitive_types5` ou utilisez la sous-commande `hint` watch
+// pour un indice.
 
 fn main() {
     let cat = ("Furry McFurson", 3.5);
-    let /* your pattern here */ = cat;
+    let ( name, age ) /* votre modèle ici */ = cat;
 
     println!("{} is {} years old.", name, age);
 }

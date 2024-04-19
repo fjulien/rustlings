@@ -1,18 +1,16 @@
 // primitive_types6.rs
 //
-// Use a tuple index to access the second element of `numbers`. You can put the
-// expression for the second element where ??? is so that the test passes.
+// Utiliser un index de tuple pour accéder au second élément de `numbers`. Vous pouvez mettre l'expression
+// l'expression pour le deuxième élément à l'endroit où se trouve ??? pour que le test réussisse.
 //
-// Execute `rustlings hint primitive_types6` or use the `hint` watch subcommand
-// for a hint.
-
-// I AM NOT DONE
+// Exécutez `rustlings hint primitive_types6` ou utilisez la sous-commande `hint` watch
+// pour un indice.
 
 #[test]
 fn indexing_tuple() {
     let numbers = (1, 2, 3);
-    // Replace below ??? with the tuple indexing syntax.
-    let second = ???;
+    // Remplacer le texte ci-dessous par la syntaxe d'indexation dU tuple.
+    let second = numbers.1;
 
     assert_eq!(2, second,
         "This is not the 2nd number in the tuple!")
